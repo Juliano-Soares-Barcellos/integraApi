@@ -7,11 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="Jason" Version="0.2.1" />
     <PackageReference Include="Jason.Client.InProcess" Version="0.2.1.2" />
     <PackageReference Include="Jason.Tools" Version="0.3.2" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.30.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
   </ItemGroup>
 
 </Project>

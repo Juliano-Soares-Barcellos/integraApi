@@ -1,3 +1,7 @@
+using integraApi.interfaces;
+using integraApi.Service;
+using integraApi.Rest;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+    builder.Services.addSingleton<ICepService,CepService>();
+    //builder.Services.addSingleton<IBancoService, BancoService>();
+    builder.Services.addSingleton<IBrasilApi, BancoService>();
 
 var app = builder.Build();
 

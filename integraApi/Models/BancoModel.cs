@@ -8,7 +8,7 @@ namespace integraApi.Model
 {
     public class BancoModel
     {
-        [JsonPropertyName("ispb")]
+        [JsonPropert("ispb")]
         public string? Ispb { get; set; }
 
         [JsonPropertyName("name")]

@@ -8,5 +8,5 @@ namespace integraApi.Properties
     public class Banco : ControllerBase
     {
     
-            }
+    }
 }
